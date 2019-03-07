@@ -4,6 +4,8 @@ services:
         build: .
         image: docker_react-app:lastest
         command: npm start
+        ports:
+          - '3000:3000'
         volumes:
           - '.:/usr/src/app'
           - /usr/src/app/node_modules
