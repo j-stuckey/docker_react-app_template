@@ -2,10 +2,11 @@ version: '3'
 services:
     front-end:
         build: .
-        image: docker_react-app:latest
+        container_name: docker-starter-kit-app
+        image: docker-starter-kit-app
         command: npm start
         ports:
           - '3000:3000'
         volumes:
-          - '.:/usr/src/app'
+          - ~/Coding/templates/starter-kit:/usr/src/app
           - /usr/src/app/node_modules

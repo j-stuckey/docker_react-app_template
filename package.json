@@ -1,11 +1,17 @@
 {
-  "name": "docker_react-template",
+  "name": "starter-kit",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "normalize.css": "^8.0.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-redux": "^7.0.3",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
     "react-scripts-cssmodules": "1.1.50",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
     "webpack-dev-server": "^3.1.11"
   },
   "scripts": {
