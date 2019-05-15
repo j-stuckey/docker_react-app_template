@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-
+import React, { Component, Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './styles/App.module.css'; // CSS Modules
 
 // Redux-actions might be useful as well. Check it out:
@@ -9,7 +9,9 @@ class App extends Component {
     render() {
         return (
             <div className={styles.AppContainer}>
-                <section className={styles.LeftSection} />
+                <section className={styles.LeftSection}>
+                    <Link to="/about">About</Link>
+                </section>
                 <section className={styles.RightSection}>
                     <p>Hello, world!</p>
                     <p>
