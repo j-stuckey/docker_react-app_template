@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Link, Switch, Route } from 'react-router-dom';
+import { Link, Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import { LandingPage } from './LandingPage';
 
 // Redux-actions might be useful as well. Check it out:
@@ -7,9 +7,13 @@ import { LandingPage } from './LandingPage';
 
 class App extends Component {
     render() {
-        return <Switch>
-            <Route exact path="/" component={LandingPage}/>
-        </Switch>;
+        return (
+            <div>
+                <Router>
+                    <Route path="/" component={LandingPage} />
+                </Router>
+            </div>
+        );
     }
 }
 

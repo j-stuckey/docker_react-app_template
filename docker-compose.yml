@@ -1,6 +1,6 @@
 version: '3'
 services:
-    front-end:
+    aws-react-app:
         build: .
         container_name: docker-starter-kit-app
         image: docker-starter-kit-app
