@@ -1,0 +1,41 @@
+{
+    /**
+     * ESLint: http://eslint.org/docs/user-guide/configuring
+     */
+
+    // "env:" supplies predefined global variables
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true,
+        "mocha": true,
+        "mongo": true
+    },
+    // our configuration extends the recommended base configuration
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "react-app",
+        "plugin:jsx-a11y/recommended"
+    ],
+
+    // define the type of file `script` or `module` for ES6 Modules
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+	},
+    //ESLint rules: Severity Levels: off = 0 | warn = 1 | error = 2
+    "rules": {
+        "strict": ["error", "safe"], //prefer `'use-strict';` pragma
+        "eqeqeq": "error", //prefer strict equality `===`
+        "no-console": "error", //allows but warn about console like `console.log()`
+        "no-unused-vars": "warn", //warns about unused variables
+        "no-eval": "error", //disallows `eval()` usage
+        "indent": ["error", 4], //enforce 2 space indents (not tabs)
+        "quotes": ["error", "single"], //prefer single quotes over double quotes
+        "semi": ["warn", "always"] //enforce semi-colon usage
+    }
+}
