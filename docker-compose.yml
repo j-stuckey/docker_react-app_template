@@ -1,12 +1,12 @@
 version: '3'
 services:
-    aws-react-app:
-        build: .
-        container_name: docker-starter-kit-app
-        image: docker-starter-kit-app
-        command: npm start
-        ports:
-          - '3000:3000'
-        volumes:
-          - .:/usr/src/app
-          - /usr/src/app/node_modules
+  ui:
+    build: .
+    container_name: yourapp_ui
+    image: yourapp_ui
+    command: npm start
+    ports:
+    - '3000:3000'
+    volumes:
+    - .:/usr/src/app
+     - /usr/src/app/node_modules
